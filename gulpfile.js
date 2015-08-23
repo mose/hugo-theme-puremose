@@ -1,9 +1,14 @@
-var gulp = require('gulp')
-	uglify = require('gulp-uglify'),
-	concat = require('gulp-concat'),
-	minifyCSS = require('gulp-minify-css');
+var gulp = require('gulp');
+var uglify = require('gulp-uglify'),
+	  concat = require('gulp-concat'),
+    coffee = require('gulp-coffee'),
+    gutil = require('gulp-util'),
+	  minifyCSS = require('gulp-minify-css');
 
-gulp.task('compress', function() {
+gulp.task('default', function() {
+  gulp.src(['assets/*.coffee'])
+    .pipe(coffee({bare: true}).on('error', gutil.log))
+    .pipe(gulp.dest('assets/js/scripts.js'));
   gulp.src(['assets/js/jquery.min.js', 'assets/js/jquery.prettysocial.min.js', 'assets/js/rainbow-custom.min.js', 'assets/js/scripts.js'])
     .pipe(concat('all.min.js'))
     .pipe(uglify())
