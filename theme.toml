@@ -1,0 +1,15 @@
+name = "hugo-theme-puremose"
+description = "Another theme based on the pure css blog layout."
+license = "MIT"
+source_repo = "https://github.com/mose/hugo-theme-puremose"
+tags = ["blog", "purecss"]
+min_version = 0.14
+
+[author]
+    name = "mose"
+    url = "http://github.com/mose"
+
+[original]
+    author = "dplesca"
+    repo = "http://github.com/dplesca/purehugo"
+
