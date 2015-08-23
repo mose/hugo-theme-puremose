@@ -1,3 +1,3 @@
 $(function(){
-    $('.prettySocial').prettySocial();
+  $('.prettySocial').prettySocial();
 });
