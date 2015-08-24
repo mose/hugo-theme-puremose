@@ -109,6 +109,10 @@ h3 {
   padding: 2em 1em 0;
 }
 
+.posts {
+  max-width: 800px;
+}
+
 .post {
   padding-bottom: 2em;
 }
