@@ -11,7 +11,7 @@ Purehugo is a theme based on [purecss](http://purecss.io/) from Yahoo. The theme
 - google analytics
 - disqus comments 
 - a mini-asset-pipeline using gulp.
-
+- uses cloudinary for images storage.
 
 Config file
 ----------------------------------
