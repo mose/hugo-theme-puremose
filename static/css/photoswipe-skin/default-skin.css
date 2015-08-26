@@ -485,13 +485,8 @@ a.pswp__share--download:hover {
 
 /* custom */
 .gallery { 
-  float: right; 
 }
-.gallery:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+
 .gallery img { 
   width: 100%; 
   height: auto; 
@@ -499,7 +494,9 @@ a.pswp__share--download:hover {
 .gallery .figure { 
   display: block; 
   float: left; 
-  margin: 0 5px 5px 0; width: 80px; }
-.gallery figcaption { display: none; }
-span[itemprop="copyrightHolder"] { color : #888; float: right; }
-span[itemprop="copyrightHolder"]:before { content: "Foto: "; }
+  margin: 0 5px 5px 0; 
+  width: 80px;
+}
+.gallery figcaption { 
+  display: none; 
+}
