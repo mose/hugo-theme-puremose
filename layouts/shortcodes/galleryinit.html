@@ -1,8 +1,8 @@
-<link rel="stylesheet" href="{{ $.Page.Site.BaseURL }}/css/photoswipe.css">
-<link rel="stylesheet" href="{{ $.Page.Site.BaseURL }}/css/photoswipe-skin/default-skin.css">
-<script src="{{ $.Page.Site.BaseURL }}/js/photoswipe.min.js"></script>
-<script src="{{ $.Page.Site.BaseURL }}/js/photoswipe-ui-default.min.js"></script>
-<script src="{{ $.Page.Site.BaseURL }}/js/initphotoswipe.js"></script>
+<link rel="stylesheet" href="{{ .Page.Site.BaseURL }}/css/photoswipe.css">
+<link rel="stylesheet" href="{{ .Page.Site.BaseURL }}/css/photoswipe-skin/default-skin.css">
+<script src="{{ .Page.Site.BaseURL }}/js/photoswipe.min.js"></script>
+<script src="{{ .Page.Site.BaseURL }}/js/photoswipe-ui-default.min.js"></script>
+<script src="{{ .Page.Site.BaseURL }}/js/initphotoswipe.js"></script>
 
 <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="pswp__bg"></div>
@@ -42,4 +42,6 @@
   </div>
 </div>
 
-<script>initPhotoSwipeFromDOM('.gallery');</script>
+<script>
+  initPhotoSwipeFromDOM('.gallery');
+</script>
