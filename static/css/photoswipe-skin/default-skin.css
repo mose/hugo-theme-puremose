@@ -484,8 +484,18 @@ a.pswp__share--download:hover {
 
 
 /* custom */
-.gallery { float: right; }
-.gallery img { width: 100%; height: auto; }
+.gallery { 
+  float: right; 
+}
+.gallery:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.gallery img { 
+  width: 100%; 
+  height: auto; 
+}
 .gallery .figure { 
   display: block; 
   float: left; 
