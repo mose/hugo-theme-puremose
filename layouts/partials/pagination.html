@@ -2,15 +2,23 @@
 <div class="pagination">
   <nav role="pagination" class="post-list-pagination">
     {{ if .Paginator.HasPrev }}
-    <a href="{{.Paginator.Prev.URL}}" class="post-list-pagination-item pure-button post-list-pagination-item-prev">
-      <i class="fa fa-angle-double-left"></i>&nbsp;Newer
+    <a href="{{.Paginator.Prev.URL}}" class="post-list-pagination-item button-small pure-button post-list-pagination-item-prev">
+      <i class="fa fa-hand-o-left"></i>&nbsp;Newer
     </a>
+    {{ else }}
+    <span class="button-small pure-button pure-button-disabled">
+      <i class="fa fa-hand-o-left"></i>&nbsp;Newer
+    </span>
     {{ end }}
-    <span class="post-list-pagination-item post-list-pagination-item-current">Page {{.Paginator.PageNumber}} of {{.Paginator.TotalPages}}</span>
+    <span class="post-list-pagination-item post-list-pagination-item-current button-small pure-button">Page {{.Paginator.PageNumber}} of {{.Paginator.TotalPages}}</span>
     {{ if .Paginator.HasNext }}
-      <a href="{{.Paginator.Next.URL}}" class="post-list-pagination-item pure-button post-list-pagination-item-next">
-        Older&nbsp;<i class="fa fa-angle-double-right"></i>
-      </a>
+    <a href="{{.Paginator.Next.URL}}" class="post-list-pagination-item button-small pure-button post-list-pagination-item-next">
+      Older&nbsp;<i class="fa fa-hand-o-right"></i>
+    </a>
+    {{ else }}
+    <span class="button-small pure-button pure-button-disabled">
+      Older&nbsp;<i class="fa fa-hand-o-right"></i>
+    </span>
     {{ end }}
   </nav>
 </div>
