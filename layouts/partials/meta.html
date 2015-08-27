@@ -1,0 +1,19 @@
+<h1 class="content-subhead">
+  {{ .Date.Format "2006-01-02" }}
+  <p class="post-meta">
+    {{ with .Params.author }}
+      By <strong class="post-author">{{ . }}</strong>
+    {{ end }}
+    {{ if isset .Params "tags" }}
+      {{ range .Params.tags }}<a class="post-tags post-tags-{{ . }}" href="{{ $.Site.BaseURL }}/tags/{{ . | urlize }}">{{ . }}</a>{{ end }}
+    {{ end }}
+    {{ if isset .Params "categories" }}
+      in 
+      {{ range .Params.categories }}<a class="post-category post-category-{{ . }}" href="{{ $.Site.BaseURL }}/categories/{{ . | urlize }}">{{ . }}</a>{{ end }}
+    {{ end }}
+    {{ if isset .Params "origins" }}
+      originaly posted on 
+      {{ range .Params.origins }}<a class="post-origin" href="{{ $.Site.BaseURL }}/origin/{{ . | urlize}}">{{ . }}</a>{{ end }}
+    {{ end }}
+  </p>
+</h1>

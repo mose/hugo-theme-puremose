@@ -126,27 +126,48 @@ h3 {
 }
 .post-meta {
   color: #999;
-  font-size: 90%;
-  margin: 5px 0;
+  margin: 4px 0;
+  float: right;
+  text-transform: none;
+  color: #aaa;
+  font-size: .9em;
+}
+.post-tags {
+  margin: 0 0.1em;
+  padding: 0.3em 1em .3em 1.5em;
+  color: #333;
+  background: #fff;
+  border-radius: 25px 5px 0 0;
+  border: 1px solid #ddd;
+  border-bottom: 1px solid #fff;
+}
+.post-tags:hover {
+  background: rgb(61, 79, 93);
+  color: #fff;
+  text-decoration: none;
+}
+.post-origin {
+  margin: 0 0.1em;
+  padding: 0.3em 1em;
+  color: #666;
+  background: #ddd;
+  font-size: 80%;
+}
+.post-origin:hover {
+  background: rgb(61, 79, 93);
+  color: #fff;
+  text-decoration: none;
 }
 .post-category {
   margin: 0 0.1em;
   padding: 0.3em 1em;
   color: #fff;
   background: #999;
-  font-size: 80%;
 }
-.post-category-design {
-  background: #5aba59;
-}
-.post-category-pure {
-  background: #4d85d1;
-}
-.post-category-yui {
-  background: #8156a7;
-}
-.post-category-javascript {
-  background: #df2d4f;
+.post-category:hover {
+  background: rgb(61, 79, 93);
+  color: #fff;
+  text-decoration: none;
 }
 .post-images {
   margin: 1em 0;
@@ -178,29 +199,33 @@ h3 {
 .footer li {
   list-style-type: none;
 }
+.post-share {
+  float: right;
+}
 .post-share-links {
-  margin:15px 15px 0 0;
-  float:left;
-  padding: 10px;
+  margin: -10px 4px 0 15px;
   border: 1px solid #ccc;
   text-align: center;
 }
 .post-share-links a {
-  color:#aaa;
-  font-size: 28px;
-  line-height: 36px;
+  color: #aaa;
+  padding: 2px 5px;
+  font-size: 20px;
+  line-height: 30px;
   margin: 0 auto;
   display: block;
   transition: all .3s ease-in;
 }
 .post-share-links a:hover {
-  color: rgb(61, 146, 201);
+  background-color: rgb(61, 146, 201);
+  color: #fff;
   text-decoration: none;
 }
 .post-share-links h4 {
   font-family: "Oxygen", sans-serif;
   margin:0 0 5px;
-  color:#aaa
+  color: #aaa;
+  font-size: .6em;
 }
 .sidebar .pagination {
   margin: 10px auto;

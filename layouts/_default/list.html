@@ -8,28 +8,17 @@
       <!-- A wrapper for all the blog posts -->
       <div class="posts">
         {{ range .Paginator.Pages }}
-        <h1 class="content-subhead">{{ .Date.Format "02 Jan 2006, 15:04" }}</h1>
-        <section class="post">
-          <header class="post-header">
+          {{ partial "meta.html" . }}
+          <section class="post">
+            <header class="post-header">
 
-            <a href="{{ .Permalink }}" class="post-title">{{ .Title }}</a>
+              <a href="{{ .Permalink }}" class="post-title">{{ .Title }}</a>
+            </header>
 
-            <p class="post-meta">
-              {{ with .Params.author }}
-                By <strong class="post-author">{{ . }}</strong>
-              {{ end }}
-              {{ if isset .Params "categories" }}
-                under 
-                {{ $baseUrl := .Site.BaseURL }}
-                {{ range .Params.categories }}<a class="post-category post-category-{{ . }}" href="{{ $baseUrl }}/categories/{{ . | urlize }}">{{ . }}</a>{{ end }}
-              {{ end }}
-            </p>
-          </header>
-
-          <div class="post-description">
-            {{ .Content }}
-          </div>
-        </section>
+            <div class="post-description">
+              {{ .Content }}
+            </div>
+          </section>
         {{ end }}
       </div>
       {{ partial "pagination.html" . }}

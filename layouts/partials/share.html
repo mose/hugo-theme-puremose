@@ -1,0 +1,14 @@
+{{ if isset .Site.Params "twitter" }}
+<div class="post-share">
+  <div class="post-share-links">
+
+
+    <a href="#" data-type="facebook" data-url="{{ .Permalink }}" data-title="{{ .Title }}" data-description="{{ .Description }}" data-media="" class="prettySocial fa fa-facebook"></a>
+    <a href="#" data-type="googleplus" data-url="{{ .Permalink }}" data-description="{{ .Description }}" class="prettySocial fa fa-google-plus"></a>
+
+    <a href="#" data-type="twitter" data-url="{{ .Permalink }}" data-description="{{ .Description }}" data-via="{{ .Site.Params.twitter }}" class="prettySocial fa fa-twitter"></a>
+
+    
+  </div>
+</div>
+{{ end }}
