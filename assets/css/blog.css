@@ -148,14 +148,12 @@ h3 {
 }
 .post-origin {
   margin: 0 0.1em;
-  padding: 0.3em 1em;
+  padding: 0.3em;
   color: #666;
-  background: #ddd;
-  font-size: 80%;
+  background: #fff;
 }
 .post-origin:hover {
-  background: rgb(61, 79, 93);
-  color: #fff;
+  color: rgb(61, 79, 93);
   text-decoration: none;
 }
 .post-category {
