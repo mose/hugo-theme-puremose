@@ -181,6 +181,7 @@ h3 {
   padding: 1em 0;
   color: #555;
   font-size: 80%;
+  max-width: 800px;
 }
 .footer ul li a {
   display:inline;
