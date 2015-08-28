@@ -201,8 +201,9 @@ h3 {
   float: right;
 }
 .post-share-links {
-  margin: -10px 4px 0 15px;
+  margin: -9px 2px 0 15px;
   border: 1px solid #ccc;
+  border-top: 0;
   text-align: center;
 }
 .post-share-links a {
