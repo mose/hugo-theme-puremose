@@ -1,4 +1,4 @@
-{{ partial "header.html" . }}
+{{ partial "header" . }}
 
 <div id="layout" class="pure-g">
   {{ partial "sidebar.html" . }}
@@ -8,7 +8,7 @@
       <!-- A wrapper for all the blog posts -->
       <div class="posts">
         {{ range .Paginator.Pages }}
-          {{ partial "meta.html" . }}
+          {{ partial "meta" . }}
           <section class="post">
             <header class="post-header">
 
@@ -21,11 +21,11 @@
           </section>
         {{ end }}
       </div>
-      {{ partial "pagination.html" . }}
-      {{ partial "footer.html" . }}
+      {{ partial "pagination" . }}
+      {{ partial "footer" . }}
     </div>
   </div>
 </div>
-{{ partial "analytics.html" . }}
+{{ partial "analytics" . }}
 </body>
 </html>

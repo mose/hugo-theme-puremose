@@ -1,16 +1,16 @@
-{{ partial "header.html" . }}
+{{ partial "header" . }}
 
 <div id="layout" class="pure-g">
-  {{ partial "sidebar.html" . }}
+  {{ partial "sidebar" . }}
 
   <div class="content pure-u-1 pure-u-md-3-4">
     <div>
       <!-- A wrapper for all the blog posts -->
       <div class="posts">
-        {{ partial "meta.html" . }}
+        {{ partial "meta" . }}
 
         <section class="post">
-          {{ partial "share.html" . }}
+          {{ partial "share" . }}
           
           <header class="post-header">
             <a href="{{ .Permalink }}" class="post-title">{{ .Title }}</a>
@@ -19,14 +19,14 @@
           <div class="post-description">
             {{ .Content }}
           </div>
-          {{ template "_internal/disqus.html" . }}
+          {{ template "_internal/disqus" . }}
         </section>
       </div>
-      {{ partial "footer.html" . }}
+      {{ partial "footer" . }}
     </div>
   </div>
 </div>
 
-{{ partial "analytics.html" . }}
+{{ partial "analytics" . }}
 </body>
 </html>
