@@ -236,11 +236,9 @@ h3 {
 }
 .disqus-bloc {
   margin-top: 100px;
-  border: 4px dashed rgb(230, 240, 245);
-  border-left: 0;
-  margin-left: -3em;
-  padding: 1em;
-  padding-left: 3em;
+  border: 0;
+  margin-left: 0;
+  padding: 0;
 }
 
 @media (min-width: 48em) {
@@ -262,5 +260,12 @@ h3 {
   .sidebar .pagination {
     float: right;
     margin: 30px 30px 0 0;
+  }
+  .disqus-bloc {
+    border: 4px dashed rgb(230, 240, 245);
+    border-left: 0;
+    margin-left: -3em;
+    padding: 1em;
+    padding-left: 3em;
   }
 }
