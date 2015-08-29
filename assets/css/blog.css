@@ -234,7 +234,9 @@ h3 {
 .button-small {
   font-size: .8em;
 }
-
+.disqus-bloc {
+  margin-top: 50px;
+}
 
 @media (min-width: 48em) {
   .content {
