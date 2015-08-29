@@ -99,7 +99,7 @@ h3 {
   padding: 2em 1em 0;
 }
 .posts {
-  max-width: 800px;
+  max-width: 700px;
 }
 .post {
   padding-bottom: 2em;
@@ -181,7 +181,7 @@ h3 {
   padding: 1em 0;
   color: #555;
   font-size: 80%;
-  max-width: 800px;
+  max-width: 700px;
 }
 .footer ul li a {
   display:inline;
@@ -236,6 +236,11 @@ h3 {
 }
 .disqus-bloc {
   margin-top: 100px;
+  border: 4px dashed rgb(170, 200, 250);
+  border-left: 0;
+  margin-left: -3em;
+  padding: 1em;
+  padding-left: 3em;
 }
 
 @media (min-width: 48em) {
