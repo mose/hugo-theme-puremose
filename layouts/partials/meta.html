@@ -4,9 +4,13 @@
     {{ with .Params.author }}
       By <strong class="post-author">{{ . }}</strong>
     {{ end }}
-    {{ if isset .Params "origins" }}
+    {{ if isset .Params "origin" }}
       originaly posted on 
-      {{ range .Params.origins }}<a class="post-origin" href="{{ $.Site.BaseURL }}/origin/{{ . | urlize}}">{{ . }}</a>{{ end }}
+      {{ with .Params.originurl }}
+        <a class="post-origin" href="{{ . }}" target="_new">{{ with $.Params.origin }}{{ . }}{{ end }}</a>
+      {{ else }}
+        <span class="post-origin">{{ with $.Params.origin }}{{ . }}{{ end }}</span>
+      {{ end }}
     {{ end }}
     {{ if isset .Params "tags" }}
       {{ range .Params.tags }}<a class="post-tags post-tags-{{ . }}" href="{{ $.Site.BaseURL }}/tags/{{ . | urlize }}">{{ . }}</a>{{ end }}
