@@ -5,7 +5,7 @@
       By <strong class="post-author">{{ . }}</strong>
     {{ end }}
     {{ if isset .Params "origin" }}
-      originaly posted on 
+      originally posted on 
       {{ with .Params.originurl }}
         <a class="post-origin" href="{{ . }}" target="_new">{{ with $.Params.origin }}{{ . }}{{ end }}</a>
       {{ else }}
