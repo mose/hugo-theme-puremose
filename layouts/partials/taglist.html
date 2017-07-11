@@ -1,0 +1,7 @@
+<div class="tags">
+  <div>
+  {{ range $key, $val := .Site.Taxonomies.tags.ByCount }}
+    <a href="/tags/{{ $val.Name }}" class="tag">{{ $val.Name }} <span>{{ $val.Count }}</span></a>
+  {{ end }}
+  </div>
+</div>
