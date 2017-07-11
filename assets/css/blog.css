@@ -275,6 +275,7 @@ h3 {
   text-decoration: none;
   color: rgb(61, 146, 201);
   display: inline;
+  padding: 0;
 }
 
 @media (min-width: 48em) {
