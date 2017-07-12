@@ -1,0 +1,7 @@
+<div class="bydate">
+{{ range .Data.Pages.GroupByDate "2006" }}
+  <span>
+  {{ .Key }}
+  </span>
+{{ end }}
+</div>
